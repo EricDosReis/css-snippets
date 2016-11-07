@@ -72,7 +72,7 @@ You can nest the grids indefinitely:
 If you want a fixed number of items per line, then use the Block Grid approach:
 
 ```html
-<section class="block-grid-sm-1 block-grid-md-2 block-grid-lg-4">
+<section class="sm-block-grid-1 md-block-grid-2 lg-block-grid-4">
   <figure class="col">
     <img src="image/path/img-1.jpg" alt="Image description 1">
 
@@ -103,7 +103,7 @@ If you want a fixed number of items per line, then use the Block Grid approach:
 
 The size of the grid gutter between columns and edges in a row is `.9375em`.
 
-## Use border-box: box-sizing in your base CSS!
+## Use border-box: box-sizing in your base CSS
 
 ```css
 *,
