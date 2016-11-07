@@ -1,0 +1,208 @@
+/*
+ * Paddings
+ */
+.padding {
+  padding: 1em;
+}
+
+.padding-2x {
+  padding: 2em;
+}
+
+.padding-horizontal {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.padding-horizontal-2x {
+	padding-right: 2em;
+	padding-left: 2em;
+}
+
+.padding-vertical {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.padding-vertical-2x {
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+
+/*
+ * Margins
+ */
+.margin {
+ margin: 1em;
+}
+
+.margin-2x {
+ margin: 2em;
+}
+
+.margin-horizontal {
+	margin-right: 1em;
+	margin-left: 1em;
+}
+
+.margin-horizontal-2x {
+	margin-right: 2em;
+	margin-left: 2em;
+}
+
+.margin-vertical {
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.margin-vertical-2x {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+/*
+ * Alignment
+ */
+.left {
+	float: left;
+}
+
+.center {
+	float: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.right {
+	float: right;
+}
+
+/*
+ * Middle alignment
+ */
+.middle-align {
+	position: relative;
+}
+
+	.middle-align .middle-align__inner {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		-webkit-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+	}
+
+/*
+ * Vertical alignment
+ */
+.vertical-align {
+	position: relative;
+}
+
+	.vertical-align .vertical-align__inner {
+		position: absolute;
+		top: 50%;
+		-webkit-transform: translateY(-50%);
+	}
+
+/*
+ * Display
+ */
+.block {
+	display: block;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+/*
+ * Typography
+ */
+.text--bold {
+	font-weight: 700;
+}
+
+.text--italic {
+	font-style: italic;
+}
+
+.text--left {
+	text-align: left;
+}
+
+.text--center {
+	text-align: center;
+}
+
+.text--right {
+	text-align: right;
+}
+
+.text--justify {
+  text-align: justify;
+}
+
+.text--small {
+	font-size: 75%;
+}
+
+.text--big {
+	font-size: 125%;
+}
+
+.text--uppercase {
+	text-transform: uppercase;
+}
+
+.text--lowercase {
+	text-transform: lowercase;
+}
+
+.text--capitalize {
+	text-transform: capitalize;
+}
+
+.text--truncated {
+  overflow: hidden;
+  text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+/*
+ * Lists
+ */
+.list--inline li {
+	display: inline-block;
+	margin-top: .125em;
+	margin-right: .5em;
+	margin-bottom: .625em;
+}
+
+.list--centered {
+	padding: 0;
+	text-align: center;
+}
+
+	.list--centered li {
+		display: inline-block;
+		float: none;
+	}
+
+.list--unstyled {
+	list-style: none;
+	padding: 0;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.radius {
+	border-radius: 3px;
+}
+
+.rounded {
+	border-radius: 500px;
+}
