@@ -1,0 +1,124 @@
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu--left {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  z-index: 100;
+}
+
+  .menu--left.menu--show {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+.menu--right {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+  z-index: 100;
+}
+
+  .menu--right.menu--show {
+    -webkit-transform: translateX(70%);
+    transform: translateX(70%);
+  }
+
+.menu--left,
+.menu--right {
+  padding-top: 3em;
+  transition: transform 250ms ease-in-out;
+  will-change: transform;
+}
+
+  .menu--left.menu--show,
+  .menu--right.menu--show {
+    transition: transform 250ms ease-in-out;
+  }
+
+.menu__item {
+  border-top: 1px solid rgba(255, 255, 255, .1);
+}
+
+  .menu__item:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+  }
+
+.menu__link {
+  display: block;
+  opacity: 1;
+  padding: .75em;
+  text-decoration: none;
+  transition: opacity 250ms ease-in-out;
+}
+
+  .menu__link:focus, .menu__link:hover {
+    opacity: .5;
+    transition: opacity 250ms ease-in-out;
+  }
+
+.menu-toggle {
+  position: fixed;
+  z-index: 101;
+}
+
+.menu-toggle--top-left {
+  top: 1em;
+  left: 1em;
+}
+
+.menu-toggle--top-right {
+  top: 1em;
+  right: 1em;
+}
+
+.wrapper--menu-push-right,
+.wrapper--menu-push-left {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+/* --------------------------------- */
+/*           Desktop screen          */
+/* --------------------------------- */
+@media screen and (min-width: 1280px) {
+
+  .menu__link {
+    padding: 1em;
+  }
+
+  .menu--left,
+  .menu--right {
+    padding-top: 0;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    width: 25%;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .wrapper--menu-push-right {
+    padding-right: calc(25% + 1em);
+    padding-left: 1em;
+  }
+
+  .wrapper--menu-push-left {
+    padding-right: 1em;
+    padding-left: calc(25% + 1em);
+  }
+
+}

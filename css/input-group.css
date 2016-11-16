@@ -1,0 +1,59 @@
+.input-group {
+  display: flex;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.input-group__label,
+.input-group__field,
+.input-group__button {
+  margin: 0;
+  padding: .625rem;
+  white-space: nowrap;
+}
+
+.input-group__label {
+  background: #F3F3F3;
+  border: 1px solid #CACACA;
+  color: #0A0A0A;
+  line-height: normal;
+}
+
+  .input-group__label:first-child {
+    border-right: 0;
+  }
+
+  .input-group__label:last-child {
+    border-left: 0;
+  }
+
+.input-group__field {
+  border-radius: 0;
+  flex: 1;
+  padding-right: .625rem;
+  padding-left: .625rem;
+}
+
+.input-group__label:first-child,
+.input-group__field:first-child,
+.input-group__button:first-child > .button {
+  border-radius: 3px 0 0 3px;
+}
+
+.input-group__label:last-child,
+.input-group__field:last-child,
+.input-group__button:last-child > .button {
+  border-radius: 0 3px 3px 0;
+}
+
+.input-group__button {
+  height: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+  .input-group__button a,
+  .input-group__button input,
+  .input-group__button button {
+    margin: 0;
+  }

@@ -1,6 +1,10 @@
 /*
  * Paddings
  */
+ .no-padding {
+   padding: 0;
+ }
+
 .padding {
   padding: 1em;
 }
@@ -32,6 +36,10 @@
 /*
  * Margins
  */
+.no-margin {
+  margin: 0;
+}
+
 .margin {
  margin: 1em;
 }
@@ -104,6 +112,7 @@
 		position: absolute;
 		top: 50%;
 		-webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 	}
 
 /*
@@ -190,9 +199,8 @@
 		float: none;
 	}
 
-.list--unstyled {
+.list--no-bullets {
 	list-style: none;
-	padding: 0;
 }
 
 .full-width {

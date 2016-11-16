@@ -1,0 +1,49 @@
+input:disabled {
+  background-color: #F3F3F3;
+  cursor: not-allowed;
+}
+
+.button {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #2BA6CB;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  color: #FEFEFE;
+  cursor: pointer;
+  display: inline-block;
+  font-size: .9125rem;
+  line-height: 1;
+  margin: 0 0 1rem 0;
+  padding: .85em 1em;
+  text-align: center;
+  transition: background-color .25s ease-out, color .25s ease-out;
+  vertical-align: middle;
+}
+
+  .button:hover, .button:focus {
+    background-color: #258DAD;
+    color: #FEFEFE;
+  }
+
+.button--small {
+  font-size: .75rem;
+}
+
+.button--large {
+  font-size: 1.25rem;
+}
+
+.button--expanded {
+  width: 100%;
+}
+
+.button--clean {
+  background-color: transparent;
+  border-color: transparent;
+  color: inherit;
+}
+
+.button--transparent {
+  background-color: transparent;
+}

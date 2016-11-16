@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>CSS Snippets</title>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,700">
+
+    <link rel="stylesheet" href="/node_modules/normalize.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/grid.css">
+    <link rel="stylesheet" href="/css/block-grid.css">
+    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/css/inputs.css">
+    <link rel="stylesheet" href="/css/radio.css">
+    <link rel="stylesheet" href="/css/buttons.css">
+    <link rel="stylesheet" href="/css/input-group.css">
+    <link rel="stylesheet" href="/css/table.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/css/colors/blue-grey.css">
+    <link rel="stylesheet" href="/css/colors/grey.css">
+    <link rel="stylesheet" href="/css/modifiers.css">
+  </head>
+
+  <body>
+    <header>
+      <button type="button" class="menu-toggle menu-toggle--top-left">
+        Menu
+      </button>
+
+      <nav class="menu menu--left bg--blue-grey-dark">
+        <ul>
+          <li class="menu__item text--bold">
+            <a class="menu__link text--blue-grey-light" href="#base">Base</a>
+          </li>
+
+          <li class="menu__item text--bold">
+            <a class="menu__link text--blue-grey-light" href="#grid">Grids</a>
+          </li>
+
+          <li class="menu__item text--bold">
+            <a class="menu__link text--blue-grey-light" href="#forms">Forms</a>
+          </li>
+
+          <li class="menu__item text--bold">
+            <a class="menu__link text--blue-grey-light" href="#modifiers">Modifiers</a>
+          </li>
+        </ul>
+
+      </nav>
+    </header>
+
+    <main>
+      <section class="wrapper--menu-push-left">
+        
+        <h1 class="text--center">CSS Snippets</h1>
+
+        <article>
+          <h2>Base</h2>
+
+          <h3>Gutters</h3>
+
+          <p>
+            The size of the grid gutter between columns and edges in a row is 1em.
+          </p>
+        </article>
+
+        <article>
+          <h2>Grids</h2>
+
+          <p>
+            A mobile first powerful multi-device grid. If you are familiar with grid systems, you will feel right at home. If not, you will learn quickly.
+          </p>
+
+          <section>
+            <h3>Normal Grid</h3>
+
+            <div class="row radius bg--grey-light">
+              <p class="text--center">row</p>
+
+              <div class="col sm-100 lg-33">
+                <p class="text--center radius text--grey-light bg--grey">
+                  sm-100 lg-33
+                </p>
+              </div>
+
+              <div class="col sm-100 md-50 lg-33 radius">
+                <p class="text--center radius text--grey-light bg--grey">
+                  sm-100 md-33 lg-33
+                </p>
+              </div>
+
+              <div class="col sm-100 md-50 lg-33 radius">
+                <p class="text--center radius text--grey-light bg--grey">
+                  sm-100 md-33 lg-33
+                </p>
+              </div>
+            </div>
+
+            <h4>
+              Nesting
+            </h4>
+
+            <div class="row radius bg--grey-light">
+              <p class="text--center">row</p>
+
+              <div class="col sm-50">
+                <div class="row bg--grey radius">
+
+                  <p class="text--center text--grey-light">sm-50</p>
+                  <p class="text--center text--grey-light">row</p>
+
+                  <div class="col sm-100 lg-50 radius">
+                    <p class="text--center radius bg--grey-light">
+                      sm-100 lg-33
+                    </p>
+                  </div>
+
+                  <div class="col sm-100 lg-50 radius">
+                    <p class="text--center radius bg--grey-light">
+                      sm-100 md-33 lg-33
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col sm-50 radius">
+                <p class="text--center radius text--grey-light bg--grey">
+                  sm-50
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h3>Block Grid</h3>
+
+            <p>
+              If you want a fixed number of items per line, then use the Block Grid approach.
+            </p>
+
+            <div class="sm-block-grid-1 md-block-grid-2 lg-block-grid-4">
+              <figure class="col">
+                <img class="center" src="http://placehold.it/250x250" alt="Image description 1">
+
+                <figcaption class="text--center">Figure caption 1</figcaption>
+              </figure>
+
+              <figure class="col">
+                <img class="center" src="http://placehold.it/250x250" alt="Image description 2">
+
+                <figcaption class="text--center">Figure caption 2</figcaption>
+              </figure>
+
+              <figure class="col">
+                <img class="center" src="http://placehold.it/250x250" alt="Image description 3">
+
+                <figcaption class="text--center">Figure caption 3</figcaption>
+              </figure>
+
+              <figure class="col">
+                <img class="center" src="http://placehold.it/250x250" alt="Image description 4">
+
+                <figcaption class="text--center">Figure caption 4</figcaption>
+              </figure>
+
+              <figure class="col">
+                <img class="center" src="http://placehold.it/250x250" alt="Image description 5">
+
+                <figcaption class="text--center">Figure caption 5</figcaption>
+              </figure>
+
+              <figure class="col">
+                <img class="center" src="http://placehold.it/250x250" alt="Image description 6">
+
+                <figcaption class="text--center">Figure caption 6</figcaption>
+              </figure>
+            </div>
+
+          </section>
+        </article>
+
+        <article>
+          <h2>Forms</h2>
+
+          <section>
+            <h3>Text Fields</h3>
+
+            <div class="row">
+              <div class="col sm-100 md-50">
+                <label class="text--bold" for="name">Name</label>
+
+                <input type="text" id="name" placeholder="Type your name">
+              </div>
+
+              <div class="col sm-100 md-50">
+                <label class="text--bold" for="email">E-mail</label>
+
+                <input type="email" id="email" placeholder="e.g. eric@email.com">
+              </div>
+
+              <div class="col sm-100 md-33">
+                <label class="text--bold" for="age">Age</label>
+
+                <input type="number" id="age">
+              </div>
+
+              <div class="col sm-100 md-33">
+                <label class="text--bold" for="country">Country</label>
+
+                <select id="country">
+                  <option value="brazil">Brazil</option>
+                  <option value="usa">USA</option>
+                  <option value="canada">Canada</option>
+                  <option value="japan">Japan</option>
+                </select>
+              </div>
+
+              <div class="col sm-100 md-33">
+                <label class="text--bold" for="birth-date">Birth Date</label>
+
+                <input type="date" id="birth-date">
+              </div>
+
+              <div class="col sm-100 md-33">
+                <label class="text--bold" for="disabled">Disabled</label>
+
+                <input type="text" id="disabled" placeholder="I'm disabled" disabled>
+              </div>
+
+              <div class="col sm-100">
+                <label class="text--bold" for="description">Description</label>
+
+                <textarea id="description" cols="30" rows="10"></textarea>
+
+                <p class="input-help">
+                  Your description must have at least 100 characters.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h3>Input Group</h3>
+
+            <div class="input-group">
+              <label class="input-group__label" for="protocol">http://</label>
+              <input class="input-group__field" type="text" id="protocol">
+            </div>
+
+            <div class="input-group">
+              <input class="input-group__field" type="search">
+
+              <div class="input-group__button">
+                <button class="button">Search</button>
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label class="input-group__label" for="post-code">E-mail</label>
+
+              <input class="input-group__field" id="post-code" type="text">
+
+              <div class="input-group__button">
+                <button class="button">Send</button>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h3>Radio and Checkbox</h3>
+
+            <h4>
+              Custom Radio
+            </h4>
+
+            <div class="radio">
+              <input type="radio" id="custom-radio-1" name="customRadio" value="1" checked>
+              <label for="custom-radio-1">Option 1</label>
+            </div>
+
+            <div class="radio">
+              <input type="radio" id="custom-radio-2" name="customRadio" value="2">
+              <label for="custom-radio-2">Option 2</label>
+            </div>
+
+            <div class="radio">
+              <input type="radio" id="custom-radio-3" name="customRadio" value="3">
+              <label for="custom-radio-3">Option 3</label>
+            </div>
+
+            <h5>
+              Inline Block
+            </h5>
+
+            <div class="radio radio--inline-block">
+              <input type="radio" id="custom-radio-4" name="customRadio" value="1" checked>
+              <label for="custom-radio-4">Option 1</label>
+            </div>
+
+            <div class="radio radio--inline-block">
+              <input type="radio" id="custom-radio-5" name="customRadio" value="2">
+              <label for="custom-radio-5">Option 2</label>
+            </div>
+
+            <div class="radio radio--inline-block">
+              <input type="radio" id="custom-radio-6" name="customRadio" value="3">
+              <label for="custom-radio-6">Option 3</label>
+            </div>
+          </section>
+
+          <section>
+            <h3>Buttons</h3>
+          </section>
+        </article>
+
+        <article>
+          <section>
+            <h3>Modifiers</h3>
+          </section>
+        </article>
+
+      </section>
+    </main>
+
+    <script src="/js/menu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+.bg--grey {
+  background-color: #9E9E9E;
+}
+
+.text--grey  {
+  color: #9E9E9E;
+}
+
+.bg--grey-light {
+  background-color: #F5F5F5;
+}
+
+.text--grey-light  {
+  color: #F5F5F5;
+}
+
+.bg--grey-dark {
+  background-color: #616161;
+}
+
+.text--grey-dark  {
+  color: #616161;
+}

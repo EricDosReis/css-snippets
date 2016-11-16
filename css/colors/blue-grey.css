@@ -1,0 +1,23 @@
+.bg--blue-grey {
+  background-color: #78909C;
+}
+
+.text--blue-grey  {
+  color: #78909C;
+}
+
+.bg--blue-grey-light {
+  background-color: #ECEFF1;
+}
+
+.text--blue-grey-light  {
+  color: #ECEFF1;
+}
+
+.bg--blue-grey-dark {
+  background-color: #455A64;
+}
+
+.text--blue-grey-dark  {
+  color: #455A64;
+}

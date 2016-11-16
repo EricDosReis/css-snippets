@@ -1,0 +1,150 @@
+select {
+  border-radius: 3px;
+  width: 100%;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' width='32' height='24' viewBox='0 0 32 24'><polygon points='0,0 32,0 16,24' style='fill: rgb%28138, 138, 138%29'></polygon></svg>");
+  background-origin: content-box;
+  background-position: right -1rem center;
+  background-repeat: no-repeat;
+  background-size: 9px 6px;
+  border: 1px solid #D1D1D1;
+  border-radius: 3px;
+  color: #0A0A0A;
+  font-family: inherit;
+  font-size: 1rem;
+  height: 2.4375rem;
+  line-height: normal;
+  margin: 0 0 1rem;
+  padding: .5rem;
+  padding-right: 1.5rem;
+}
+
+  @media screen and (min-width: 0\0) {
+    select {
+      background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAYCAYAAACbU/80AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIpJREFUeNrEkckNgDAMBBfRkEt0ObRBBdsGXUDgmQfK4XhH2m8czQAAy27R3tsw4Qfe2x8uOO6oYLb6GlOor3GF+swURAOmUJ+RwtEJs9WvTGEYxBXqI1MQAZhCfUQKRzDMVj+TwrAIV6jvSUEkYAr1LSkcyTBb/V+KYfX7xAeusq3sLDtGH3kEGACPWIflNZfhRQAAAABJRU5ErkJggg==");
+    }
+  }
+
+  select:disabled {
+    background-color: #E6E6E6;
+    cursor: not-allowed;
+  }
+
+  select::-ms-expand {
+    display: none;
+  }
+
+  select[multiple] {
+    background-image: none;
+    height: auto;
+  }
+
+textarea {
+  border-radius: 3px;
+  height: auto;
+  min-height: 50px;
+}
+
+[type='text'],
+[type='password'],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='month'],
+[type='week'],
+[type='email'],
+[type='number'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='url'],
+[type='color'],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 1px solid #D1D1D1;
+  border-radius: 3px;
+  color: #0A0A0A;
+  display: block;
+  font-family: inherit;
+  font-size: 1rem;
+  width: 100%;
+  margin: 0 0 1rem;
+  padding: .5rem;
+  transition: border-color .25s ease-in-out;
+}
+
+  [type='text']:focus,
+  [type='password']:focus,
+  [type='date']:focus,
+  [type='datetime']:focus,
+  [type='datetime-local']:focus,
+  [type='month']:focus,
+  [type='week']:focus,
+  [type='email']:focus,
+  [type='number']:focus,
+  [type='search']:focus,
+  [type='tel']:focus,
+  [type='time']:focus,
+  [type='url']:focus,
+  [type='color']:focus,
+  textarea:focus {
+    border: 1px solid #9B4DCA;
+    transition: border-color .25s ease-in-out;
+  }
+
+textarea {
+  max-width: 100%;
+}
+
+  textarea[rows] {
+    height: auto;
+  }
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #AEAEAE;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #AEAEAE;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #AEAEAE;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #AEAEAE;
+}
+
+input:disabled,
+input[readonly],
+textarea:disabled,
+textarea[readonly] {
+  background-color: #F3F3F3;
+  cursor: not-allowed;
+}
+
+[type='file'] {
+  margin: 0 0 1rem;
+  width: 100%;
+}
+
+.input-help {
+  color: #0A0A0A;
+  font-size: .8125rem;
+  font-style: italic;
+  margin-top: -.5rem;
+}
