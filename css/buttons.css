@@ -13,6 +13,7 @@ input:disabled {
   cursor: pointer;
   display: inline-block;
   font-size: .9125rem;
+  letter-spacing: .125rem;
   line-height: 1;
   margin: 0 0 1rem 0;
   padding: .85em 1em;
@@ -38,12 +39,14 @@ input:disabled {
   width: 100%;
 }
 
-.button--clean {
+.button--clear {
   background-color: transparent;
   border-color: transparent;
   color: inherit;
 }
 
-.button--transparent {
+.button--outlined {
   background-color: transparent;
+  border: 1px solid #2BA6CB;;
+  color: #2BA6CB;
 }

@@ -30,6 +30,7 @@
 .input-group__field {
   border-radius: 0;
   flex: 1;
+  height: auto;
   padding-right: .625rem;
   padding-left: .625rem;
 }
