@@ -1,0 +1,8 @@
+.table--striped thead,
+.table--striped tr:nth-child(even) {
+  background-color: #F8F8F8;
+}
+
+.table--striped tr:nth-child(odd) {
+  background-color: #transparent;
+}

@@ -1,0 +1,16 @@
+.table--scroll {
+  box-shadow: inset -7px 0 9px -7px rgba(0, 0, 0, .3);
+  overflow-x: auto;
+}
+
+.table--scroll table {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 1024px) {
+
+  .table--scroll {
+    box-shadow: none;
+  }
+
+}

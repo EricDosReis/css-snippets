@@ -20,7 +20,10 @@
     <link rel="stylesheet" href="/css/radio.css">
     <link rel="stylesheet" href="/css/buttons.css">
     <link rel="stylesheet" href="/css/input-group.css">
-    <link rel="stylesheet" href="/css/table.css">
+    <link rel="stylesheet" href="/css/tables/table.css">
+    <link rel="stylesheet" href="/css/tables/table-striped.css">
+    <link rel="stylesheet" href="/css/tables/table-stacked.css">
+    <link rel="stylesheet" href="/css/tables/table-scroll.css">
     <link rel="stylesheet" href="/css/menu.css">
 
     <link rel="stylesheet" href="/css/colors/blue-grey.css">
@@ -56,6 +59,10 @@
           </li>
 
           <li class="menu__item text--spaced text--uppercase">
+            <a class="menu__link text--blue-grey-light" href="#tables">Tables</a>
+          </li>
+
+          <li class="menu__item text--spaced text--uppercase">
             <a class="menu__link text--blue-grey-light" href="#modifiers">Modifiers</a>
           </li>
         </ul>
@@ -68,7 +75,7 @@
 
         <h1 class="text--center">CSS Snippets</h1>
 
-        <article>
+        <article id="base">
           <h2>Base</h2>
 
           <h3>Gutters</h3>
@@ -339,7 +346,205 @@
           </section>
         </article>
 
-        <article>
+        <article id="tables">
+          <h2>Tables</h2>
+
+          <section>
+            <h3>Simple Table</h3>
+
+            <table>
+              <thead>
+                <tr>
+                  <th width="200">Table Header</th>
+                  <th>Table Header</th>
+                  <th width="150">Table Header</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                  <td>Content Goes Here</td>
+                </tr>
+              </tbody>
+
+            </table>
+          </section>
+
+          <section>
+            <h3>Stacked Table</h3>
+
+            <p>
+              To stack a table on small screens use <code>.table--stacked</code> class on <code>&lt;table&gt;</code> element.
+            </p>
+
+            <table class="table--stacked">
+              <caption>Table caption</caption>
+
+              <thead>
+                <tr>
+                  <th>Cookies</th>
+                  <th>Taste</th>
+                  <th>Calories</th>
+                  <th>Overall</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td data-label="Cookies">Chocolate Chip</td>
+                  <td data-label="Taste">Tastey</td>
+                  <td data-label="Calories">120cal</td>
+                  <td data-label="Overall">7.5/10</td>
+                </tr>
+
+                <tr>
+                  <td data-label="Cookies">Snickerdoodle</td>
+                  <td data-label="Taste">Delicious</td>
+                  <td data-label="Calories">95cal</td>
+                  <td data-label="Overall">8/10</td>
+                </tr>
+
+                <tr>
+                  <td data-label="Cookies">Oatmeal Raisin</td>
+                  <td data-label="Taste">Superb</td>
+                  <td data-label="Calories">10cal</td>
+                  <td data-label="Overall">11/10</td>
+                </tr>
+              </tbody>
+
+            </table>
+          </section>
+
+          <section>
+            <h3>Striped Table</h3>
+
+            <p>
+              To stripe a table use <code>.table--striped</code> class on <code>&lt;table&gt;</code> element.
+            </p>
+
+            <table class="table--striped">
+              <caption>Table caption</caption>
+
+              <thead>
+                <tr>
+                  <th>Marvel</th>
+                  <th>DC</th>
+                  <th>Cocoricó</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>War Machine</td>
+                  <td>Batman</td>
+                  <td>Júlio</td>
+                </tr>
+
+                <tr>
+                  <td>Thor</td>
+                  <td>Superman</td>
+                  <td>Alípio</td>
+                </tr>
+
+                <tr>
+                  <td>Spiderman</td>
+                  <td>Wonder Woman</td>
+                  <td>Mimosa</td>
+                </tr>
+              </tbody>
+
+            </table>
+          </section>
+
+          <section>
+            <h3>Scroll Table</h3>
+
+            <p>
+              Add a wrapper element with the class <code>.table--scroll</code> around your table to enable horizontal scrolling.
+            </p>
+
+            <div class="table--scroll">
+              <table>
+
+                <thead>
+                  <tr>
+                    <th width="200">Race Date</th>
+                    <th>1th</th>
+                    <th>2th</th>
+                    <th>3th</th>
+                    <th>4th</th>
+                    <th>5th</th>
+                    <th>6th</th>
+                    <th>7th</th>
+                    <th>8th</th>
+                    <th>9th</th>
+                    <th>10th</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>06/12/2018</td>
+                    <td>Peach</td>
+                    <td>Diddy Kong</td>
+                    <td>Luigi</td>
+                    <td>Yoshi</td>
+                    <td>Bowser</td>
+                    <td>Toad</td>
+                    <td>Koopa Troopa</td>
+                    <td>Donkey Kong</td>
+                    <td>Wario</td>
+                    <td>Mario</td>
+                  </tr>
+
+                  <tr>
+                    <td>09/09/2018</td>
+                    <td>Bowser</td>
+                    <td>Peach</td>
+                    <td>Mario</td>
+                    <td>Diddy Kong</td>
+                    <td>Luigi</td>
+                    <td>Toad</td>
+                    <td>Donkey Kong</td>
+                    <td>Wario</td>
+                    <td>Yoshi</td>
+                    <td>Koopa Troopa</td>
+                  </tr>
+
+                  <tr>
+                    <td>10/15/2018</td>
+                    <td>Yoshi</td>
+                    <td>Bowser</td>
+                    <td>Mario</td>
+                    <td>Peach</td>
+                    <td>Toad</td>
+                    <td>Koopa Troopa</td>
+                    <td>Wario</td>
+                    <td>Luigi</td>
+                    <td>Donkey Kong</td>
+                    <td>Diddy Kong</td>
+                  </tr>
+                </tbody>
+
+              </table>
+            </div>
+
+          </section>
+        </article>
+
+        <article id="modifiers">
           <h2>Modifiers</h2>
 
           <section>
