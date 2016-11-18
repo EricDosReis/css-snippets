@@ -1,0 +1,31 @@
+.no-margin {
+  margin: 0;
+}
+
+.margin {
+ margin: 1rem;
+}
+
+.margin-2x {
+ margin: 2rem;
+}
+
+.margin-horizontal {
+	margin-right: 1rem;
+	margin-left: 1rem;
+}
+
+.margin-horizontal-2x {
+	margin-right: 2rem;
+	margin-left: 2rem;
+}
+
+.margin-vertical {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+
+.margin-vertical-2x {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}

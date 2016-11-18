@@ -40,12 +40,6 @@
 				transition: all 300ms ease;
 			}
 
-				.radio.radio--white input[type="radio"] + label:before,
-				.radio.radio--white input[type="radio"] + label:after {
-					background: transparent;
-					border: 2px solid #FFF;
-				}
-
 			.radio input[type="radio"] + label:after {
 				background: #5BC0DE;
 				border: 3px solid #EEEEF6;
@@ -56,25 +50,13 @@
 				transition: all 300ms ease;
 			}
 
-				.radio.radio--white input[type="radio"] + label:after {
-					background: #FFF;
-				}
-
 			.radio input[type="radio"]:focus + label:before {
 				box-shadow: 0 0 4px #5BC0DE;
 			}
 
-				.radio.radio--white input[type="radio"]:focus + label:before {
-					box-shadow: 0 0 4px #FFF;
-				}
-
 			.radio input[type="radio"]:checked + label:before {
 				border-color: #5BC0DE;
 			}
-
-				.radio.radio--white input[type="radio"]:checked + label:before {
-					border-color: #FFF;
-				}
 
 			.radio input[type="radio"]:checked + label:after {
 				-webkit-transform: scale(.8, .8);

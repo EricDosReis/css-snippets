@@ -1,0 +1,53 @@
+.text--bold {
+	font-weight: 700;
+}
+
+.text--italic {
+	font-style: italic;
+}
+
+.text--small {
+	font-size: 70%;
+}
+
+.text--big {
+	font-size: 140%;
+}
+
+.text--uppercase {
+	text-transform: uppercase;
+}
+
+.text--lowercase {
+	text-transform: lowercase;
+}
+
+.text--capitalize {
+	text-transform: capitalize;
+}
+
+.text--spaced {
+	letter-spacing: .125rem;
+}
+
+.text--left {
+	text-align: left;
+}
+
+.text--center {
+	text-align: center;
+}
+
+.text--right {
+	text-align: right;
+}
+
+.text--justify {
+  text-align: justify;
+}
+
+.text--truncated {
+  overflow: hidden;
+  text-overflow: ellipsis;
+	white-space: nowrap;
+}

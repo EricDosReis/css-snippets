@@ -1,0 +1,27 @@
+.bg--transparent {
+	background-color: transparent;
+}
+
+.text--transparent {
+	color: transparent;
+}
+
+.block {
+	display: block;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.radius {
+	border-radius: 3px;
+}
+
+.rounded {
+	border-radius: 500px;
+}

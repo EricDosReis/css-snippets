@@ -1,0 +1,21 @@
+.list--inline li {
+	display: inline-block;
+	margin-top: .125em;
+	margin-right: .5em;
+	margin-bottom: .625em;
+}
+
+.list--centered {
+	padding: 0;
+	text-align: center;
+}
+
+	.list--centered li {
+		display: inline-block;
+		float: none;
+    margin-right: .5em;
+	}
+
+.list--no-bullets {
+	list-style: none;
+}

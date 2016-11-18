@@ -10,7 +10,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,700">
 
     <link rel="stylesheet" href="/node_modules/normalize.css">
+
     <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/code.css">
     <link rel="stylesheet" href="/css/grid.css">
     <link rel="stylesheet" href="/css/block-grid.css">
     <link rel="stylesheet" href="/css/typography.css">
@@ -20,9 +22,17 @@
     <link rel="stylesheet" href="/css/input-group.css">
     <link rel="stylesheet" href="/css/table.css">
     <link rel="stylesheet" href="/css/menu.css">
+
     <link rel="stylesheet" href="/css/colors/blue-grey.css">
+    <link rel="stylesheet" href="/css/colors/blue.css">
     <link rel="stylesheet" href="/css/colors/grey.css">
-    <link rel="stylesheet" href="/css/modifiers.css">
+
+    <link rel="stylesheet" href="/css/modifiers/alignments.css">
+    <link rel="stylesheet" href="/css/modifiers/lists.css">
+    <link rel="stylesheet" href="/css/modifiers/margins.css">
+    <link rel="stylesheet" href="/css/modifiers/misc.css">
+    <link rel="stylesheet" href="/css/modifiers/paddings.css">
+    <link rel="stylesheet" href="/css/modifiers/typography.css">
   </head>
 
   <body>
@@ -33,19 +43,19 @@
 
       <nav class="menu menu--left bg--blue-grey-dark">
         <ul>
-          <li class="menu__item text--bold">
+          <li class="menu__item text--spaced text--uppercase">
             <a class="menu__link text--blue-grey-light" href="#base">Base</a>
           </li>
 
-          <li class="menu__item text--bold">
-            <a class="menu__link text--blue-grey-light" href="#grid">Grids</a>
+          <li class="menu__item text--spaced text--uppercase">
+            <a class="menu__link text--blue-grey-light" href="#grids">Grids</a>
           </li>
 
-          <li class="menu__item text--bold">
+          <li class="menu__item text--spaced text--uppercase">
             <a class="menu__link text--blue-grey-light" href="#forms">Forms</a>
           </li>
 
-          <li class="menu__item text--bold">
+          <li class="menu__item text--spaced text--uppercase">
             <a class="menu__link text--blue-grey-light" href="#modifiers">Modifiers</a>
           </li>
         </ul>
@@ -64,11 +74,11 @@
           <h3>Gutters</h3>
 
           <p>
-            The size of the grid gutter between columns and edges in a row is 1em.
+            By default the size of the grid gutter between columns and edges in a row is 1rem.
           </p>
         </article>
 
-        <article>
+        <article id="grids">
           <h2>Grids</h2>
 
           <p>
@@ -184,7 +194,7 @@
           </section>
         </article>
 
-        <article>
+        <article id="forms">
           <h2>Forms</h2>
 
           <section>
@@ -226,21 +236,28 @@
                 <input type="date" id="birth-date">
               </div>
 
-              <div class="col sm-100 md-33">
+              <div class="col sm-100 md-50">
                 <label class="text--bold" for="disabled">Disabled</label>
 
                 <input type="text" id="disabled" placeholder="I'm disabled" disabled>
               </div>
 
+              <div class="col sm-100 md-50">
+                <label class="text--bold" for="readonly">Readonly</label>
+
+                <input type="text" id="readonly" placeholder="I'm readonly" readonly>
+              </div>
+
               <div class="col sm-100">
                 <label class="text--bold" for="description">Description</label>
 
-                <textarea id="description" cols="30" rows="10"></textarea>
+                <textarea id="description" cols="30" rows="8"></textarea>
 
                 <p class="input-help">
                   Your description must have at least 100 characters.
                 </p>
               </div>
+
             </div>
           </section>
 
@@ -316,16 +333,173 @@
           <section>
             <h3>Buttons</h3>
 
-              <button class="button">Default Button</button>
-              <button class="button button--outlined">Outlined Button</button>
-              <button class="button button--clear">Clear Button</button>
-              
+            <button class="button">Default Button</button>
+            <button class="button button--outlined">Outlined Button</button>
+            <button class="button button--clear">Clear Button</button>
           </section>
         </article>
 
         <article>
+          <h2>Modifiers</h2>
+
           <section>
-            <h3>Modifiers</h3>
+            <h3>Paddings</h3>
+
+            <p>
+              Class to add and remove paddings <code>.padding</code>, <code>.no-padding</code>, <code>.padding-2x</code>, <code>.padding-horizontal</code>, <code>.padding-horizontal-2x</code>, <code>.padding-vertical</code> and  <code>.padding-horizontal-2x</code>.
+            </p>
+          </section>
+
+          <section>
+            <h3>Margins</h3>
+
+            <p>
+              Class to add and remove margins <code>.margin</code>, <code>.no-margin</code>, <code>.margin-2x</code>, <code>.margin-horizontal</code>, <code>.margin-horizontal-2x</code>, <code>.margin-vertical</code> and  <code>.margin-horizontal-2x</code>.
+            </p>
+          </section>
+
+          <section>
+            <h3>Alignments</h3>
+
+            <div class="row bg--blue margin-vertical radius">
+              <div class="col sm-33 left">
+                <p class="text--center bg--blue-dark text--blue-light margin radius">
+                  <code class="bg--transparent">.left</code>
+                </p>
+              </div>
+
+              <div class="col sm-33 right">
+                <p class="text--center bg--blue-dark text--blue-light margin radius">
+                  <code class="bg--transparent">.right</code>
+                </p>
+              </div>
+            </div>
+
+            <div class="row bg--blue margin-vertical radius">
+              <div class="col sm-33 center">
+                <p class="text--center bg--blue-dark text--blue-light margin radius">
+                  <code class="bg--transparent">.center</code>
+                </p>
+              </div>
+            </div>
+
+            <div class="bg--blue margin-vertical radius">
+              <div class="middle" style="height: 300px">
+                <p class="text--blue-light">
+                  <code class="bg--transparent">.middle</code>
+                </p>
+
+                <p class="middle__inner bg--blue-dark text--blue-light no-margin radius">
+                  <code class="bg--transparent">.middle__inner</code>
+                </p>
+              </div>
+            </div>
+
+            <div class="bg--blue margin-vertical radius">
+              <div class="vertical-middle" style="height: 300px">
+                <p class="text--blue-light">
+                  <code class="bg--transparent">.vertical-middle</code>
+                </p>
+
+                <p class="vertical-middle__inner bg--blue-dark text--blue-light no-margin radius">
+                  <code class="bg--transparent">.vertical-middle__inner</code>
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h3>Lists</h3>
+
+            <h4>Inline list</h4>
+
+            <ul class="list--inline">
+              <li>Rice</li>
+              <li>Bean</li>
+              <li>Carrot</li>
+              <li>Meat</li>
+            </ul>
+
+            <h4>No bullets</h4>
+
+            <ul class="list--no-bullets">
+              <li>360 Flip</li>
+              <li>Double Flip</li>
+              <li>FS Nose Slide</li>
+              <li>Dark Slide</li>
+            </ul>
+
+            <h4>Centered list</h4>
+
+            <ul class="list--centered">
+              <li>Home</li>
+              <li>Services</li>
+              <li>Portfolio</li>
+              <li>Contact</li>
+            </ul>
+          </section>
+
+          <section>
+            <h4>Typography</h4>
+
+            <p>
+              <span class="text--bold">I'm bold</span> <code>.text--bold</code>
+            </p>
+
+            <p>
+              <span class="text--italic">I'm italic</span> <code>.text--italic</code>
+            </p>
+
+            <p>
+              <span class="text--small">I'm small</span> <code>.text--small</code>
+            </p>
+
+            <p>
+              <span class="text--big">I'm big</span> <code>.text--big</code>
+            </p>
+
+            <p>
+              <span class="text--uppercase">I'm uppercase</span> <code>.text--uppercase</code>
+            </p>
+
+            <p>
+              <span class="text--lowercase">I'm lowercase</span> <code>.text--lowercase</code>
+            </p>
+
+            <p>
+              <span class="text--capitalize">I'm capitalize</span> <code>.text--capitalize</code>
+            </p>
+
+            <p>
+              <span class="text--spaced">I'm spaced</span> <code>.text--spaced</code>
+            </p>
+
+            <p class="text--left">
+              Text align left <code>.text--left</code>.
+            </p>
+
+            <p class="text--center">
+              Text align center <code>.text--center</code>.
+            </p>
+
+            <p class="text--right">
+              Text align right <code>.text--right</code>.
+            </p>
+
+            <p class="text--justify">
+              <span class="text--bold">I'm a justified text</span> and lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nobis tenetur nemo saepe libero eligendi. Dicta earum quibusdam quas facere eaque quam, fugit velit? Veritatis, dolore sed saepe odit doloremque optio ullam fugiat, excepturi quae cum, nemo iste voluptate pariatur natus architecto. Quia ullam rem quo facere ex minima animi eveniet fugiat necessitatibus porro quasi fugit aliquid ea expedita est adipisci odit ipsam, pariatur distinctio blanditiis repudiandae. Deleniti ducimus voluptatibus labore quo dolore velit accusantium vero officia, quae culpa eos magnam, porro itaque earum atque corrupti officiis quod ab! Nemo numquam praesentium non temporibus ullam sequi quas fuga vitae veritatis dolore libero atque ab, necessitatibus aspernatur id officiis eaque fugiat quisquam, blanditiis <code>.text--justify</code>.
+            </p>
+
+            <div class="row">
+              <div class="col sm-100 md-50 no-padding">
+
+                <p class="text--truncated">
+                  <span class="text--bold">I'm a truncanted text</span> and lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nobis tenetur nemo saepe libero eligendi. Dicta earum quibusdam quas facere eaque quam, fugit velit?
+                </p>
+
+              </div>
+            </div>
+
           </section>
         </article>
 
