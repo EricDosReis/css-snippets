@@ -1,10 +1,6 @@
-input:disabled {
-  background-color: #F3F3F3;
-  cursor: not-allowed;
-}
-
 .button {
   -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   background-color: #2BA6CB;
   border: 1px solid transparent;
@@ -12,11 +8,12 @@ input:disabled {
   color: #FEFEFE;
   cursor: pointer;
   display: inline-block;
+  font-family: inherit;
   font-size: .9125rem;
   letter-spacing: .125rem;
   line-height: 1;
   margin: 0 0 1rem 0;
-  padding: .85em 1em;
+  padding: .85rem 1rem;
   text-align: center;
   transition: background-color .25s ease-out, color .25s ease-out;
   vertical-align: middle;
@@ -27,12 +24,17 @@ input:disabled {
     color: #FEFEFE;
   }
 
+  .button:disabled {
+    opacity: .5;
+    cursor: not-allowed;
+  }
+
 .button--small {
-  font-size: .75rem;
+  font-size: .625rem;
 }
 
 .button--large {
-  font-size: 1.25rem;
+  font-size: 1.625rem;
 }
 
 .button--expanded {
@@ -45,8 +47,13 @@ input:disabled {
   color: inherit;
 }
 
-.button--outlined {
+.button--outlined,
+.button--dashed {
   background-color: transparent;
   border: 1px solid #2BA6CB;;
   color: #2BA6CB;
+}
+
+.button--dashed {
+  border-style: dashed;
 }

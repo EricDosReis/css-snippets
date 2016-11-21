@@ -42,7 +42,6 @@ table.table--stacked {
   }
 
   .table--stacked td {
-    border-bottom: 1px dotted #CCC;
     display: table-cell;
   }
 

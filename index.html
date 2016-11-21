@@ -13,22 +13,27 @@
 
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/code.css">
+
     <link rel="stylesheet" href="/css/grid.css">
     <link rel="stylesheet" href="/css/block-grid.css">
     <link rel="stylesheet" href="/css/typography.css">
+
     <link rel="stylesheet" href="/css/inputs.css">
-    <link rel="stylesheet" href="/css/radio.css">
     <link rel="stylesheet" href="/css/buttons.css">
     <link rel="stylesheet" href="/css/input-group.css">
+    <link rel="stylesheet" href="/css/radio.css">
+    <link rel="stylesheet" href="/css/checkbox.css">
+
     <link rel="stylesheet" href="/css/tables/table.css">
     <link rel="stylesheet" href="/css/tables/table-striped.css">
     <link rel="stylesheet" href="/css/tables/table-stacked.css">
     <link rel="stylesheet" href="/css/tables/table-scroll.css">
-    <link rel="stylesheet" href="/css/menu.css">
 
     <link rel="stylesheet" href="/css/colors/blue-grey.css">
     <link rel="stylesheet" href="/css/colors/blue.css">
     <link rel="stylesheet" href="/css/colors/grey.css">
+
+    <link rel="stylesheet" href="/css/menu.css">
 
     <link rel="stylesheet" href="/css/modifiers/alignments.css">
     <link rel="stylesheet" href="/css/modifiers/lists.css">
@@ -106,13 +111,13 @@
 
               <div class="col sm-100 md-50 lg-33 radius">
                 <p class="text--center radius text--grey-light bg--grey">
-                  sm-100 md-33 lg-33
+                  sm-100 md-50 lg-33
                 </p>
               </div>
 
               <div class="col sm-100 md-50 lg-33 radius">
                 <p class="text--center radius text--grey-light bg--grey">
-                  sm-100 md-33 lg-33
+                  sm-100 md-50 lg-33
                 </p>
               </div>
             </div>
@@ -132,13 +137,13 @@
 
                   <div class="col sm-100 lg-50 radius">
                     <p class="text--center radius bg--grey-light">
-                      sm-100 lg-33
+                      sm-100 lg-50
                     </p>
                   </div>
 
                   <div class="col sm-100 lg-50 radius">
                     <p class="text--center radius bg--grey-light">
-                      sm-100 md-33 lg-33
+                      sm-100 lg-50
                     </p>
                   </div>
 
@@ -298,42 +303,90 @@
           <section>
             <h3>Radio and Checkbox</h3>
 
-            <h4>
-              Custom Radio
-            </h4>
+            <div class="row">
+              <div class="col sm-100 md-50">
 
-            <div class="radio">
-              <input type="radio" id="custom-radio-1" name="customRadio1" value="1" checked>
-              <label for="custom-radio-1">Option 1</label>
-            </div>
+                <h4>
+                  Custom Radio
+                </h4>
 
-            <div class="radio">
-              <input type="radio" id="custom-radio-2" name="customRadio1" value="2">
-              <label for="custom-radio-2">Option 2</label>
-            </div>
+                <div class="radio">
+                  <input type="radio" id="custom-radio-1" name="customRadio1" value="1" checked>
+                  <label for="custom-radio-1">Option 1</label>
+                </div>
 
-            <div class="radio">
-              <input type="radio" id="custom-radio-3" name="customRadio1" value="3">
-              <label for="custom-radio-3">Option 3</label>
+                <div class="radio">
+                  <input type="radio" id="custom-radio-2" name="customRadio1" value="2">
+                  <label for="custom-radio-2">Option 2</label>
+                </div>
+
+                <div class="radio">
+                  <input type="radio" id="custom-radio-3" name="customRadio1" value="3">
+                  <label for="custom-radio-3">Option 3</label>
+                </div>
+              </div>
+
+              <div class="col sm-100 md-50">
+                <h4>
+                  Custom Checkbox
+                </h4>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="custom-checkbox-1" name="customCheckbox1" value="1" checked>
+                  <label for="custom-checkbox-1">Option 1</label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="custom-checkbox-2" name="customCheckbox1" value="2">
+                  <label for="custom-checkbox-2">Option 2</label>
+                </div>
+
+                <div class="checkbox">
+                  <input type="checkbox" id="custom-checkbox-3" name="customCheckbox1" value="3">
+                  <label for="custom-checkbox-3">Option 3</label>
+                </div>
+              </div>
             </div>
 
             <h5>
               Inline Block
             </h5>
 
-            <div class="radio radio--inline-block">
-              <input type="radio" id="custom-radio-4" name="customRadio2" value="1" checked>
-              <label for="custom-radio-4">Option 1</label>
-            </div>
+            <div class="row">
+              <div class="col sm-100 md-50">
+                <div class="radio radio--inline-block">
+                  <input type="radio" id="custom-radio-4" name="customRadio2" value="1" checked>
+                  <label for="custom-radio-4">Option 1</label>
+                </div>
 
-            <div class="radio radio--inline-block">
-              <input type="radio" id="custom-radio-5" name="customRadio2" value="2">
-              <label for="custom-radio-5">Option 2</label>
-            </div>
+                <div class="radio radio--inline-block">
+                  <input type="radio" id="custom-radio-5" name="customRadio2" value="2">
+                  <label for="custom-radio-5">Option 2</label>
+                </div>
 
-            <div class="radio radio--inline-block">
-              <input type="radio" id="custom-radio-6" name="customRadio2" value="3">
-              <label for="custom-radio-6">Option 3</label>
+                <div class="radio radio--inline-block">
+                  <input type="radio" id="custom-radio-6" name="customRadio2" value="3">
+                  <label for="custom-radio-6">Option 3</label>
+                </div>
+              </div>
+
+              <div class="col sm-100 md-50">
+                <div class="checkbox checkbox--inline-block">
+                  <input type="checkbox" id="custom-checkbox-4" name="customCheckbox2" value="1" checked>
+                  <label for="custom-checkbox-4">Option 1</label>
+                </div>
+
+                <div class="checkbox checkbox--inline-block">
+                  <input type="checkbox" id="custom-checkbox-5" name="customCheckbox2" value="2">
+                  <label for="custom-checkbox-5">Option 2</label>
+                </div>
+
+                <div class="checkbox checkbox--inline-block">
+                  <input type="checkbox" id="custom-checkbox-6" name="customCheckbox2" value="3">
+                  <label for="custom-checkbox-6">Option 3</label>
+                </div>
+              </div>
+
             </div>
           </section>
 
@@ -341,8 +394,34 @@
             <h3>Buttons</h3>
 
             <button class="button">Default Button</button>
+            <button class="button" disabled>Disabled Button</button>
             <button class="button button--outlined">Outlined Button</button>
+            <button class="button button--dashed">Dashed Button</button>
             <button class="button button--clear">Clear Button</button>
+
+            <h4>Buttons Small</h4>
+
+            <button class="button button--small">Default Button</button>
+            <button class="button button--small" disabled>Disabled Button</button>
+            <button class="button button--small button--outlined">Outlined Button</button>
+            <button class="button button--small button--dashed">Dashed Button</button>
+            <button class="button button--small button--clear">Clear Button</button>
+
+            <h4>Buttons Large</h4>
+
+            <button class="button button--large">Default Button</button>
+            <button class="button button--large" disabled>Disabled Button</button>
+            <button class="button button--large button--outlined">Outlined Button</button>
+            <button class="button button--large button--dashed">Dashed Button</button>
+            <button class="button button--large button--clear">Clear Button</button>
+
+            <h4>Buttons Expanded</h4>
+
+            <button class="button button--expanded">Default Button</button>
+            <button class="button button--expanded" disabled>Disabled Button</button>
+            <button class="button button--expanded button--outlined">Outlined Button</button>
+            <button class="button button--expanded button--dashed">Dashed Button</button>
+            <button class="button button--expanded button--clear">Clear Button</button>
           </section>
         </article>
 
@@ -475,7 +554,9 @@
               Add a wrapper element with the class <code>.table--scroll</code> around your table to enable horizontal scrolling.
             </p>
 
-            <div class="table--scroll">
+            <div class="row">
+              <div class="col sm-100 md-70 center">
+                <div class="table--scroll">
               <table>
 
                 <thead>
@@ -540,7 +621,8 @@
 
               </table>
             </div>
-
+              </div>
+            </div>
           </section>
         </article>
 

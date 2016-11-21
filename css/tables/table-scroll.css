@@ -1,9 +1,11 @@
 .table--scroll {
+  border: 1px solid #CCC;
   box-shadow: inset -7px 0 9px -7px rgba(0, 0, 0, .3);
   overflow-x: auto;
 }
 
 .table--scroll table {
+  border: none;
   margin-bottom: 0;
 }
 

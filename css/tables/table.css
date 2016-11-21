@@ -8,29 +8,28 @@ table {
 }
 
 tr {
-  border: 1px solid #DDD;
+  border-bottom: 1px solid #DDD;
   padding: .25rem;
 }
 
+  tr:last-child {
+    border-bottom: none;
+  }
+
 th {
+  border-bottom: 1px solid #DDD;
   font-size: .8125rem;
   letter-spacing: .0625rem;
   text-transform: uppercase;
 }
 
 td {
-  border-bottom: 1px dotted #CCC;
-  border-bottom: none;
   font-size: 1rem;
 }
 
   td, th {
     padding: .75rem;
     text-align: left;
-  }
-
-  td:last-child {
-    border-bottom: 0;
   }
 
 caption {
