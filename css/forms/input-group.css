@@ -7,6 +7,8 @@
 .input-group__label,
 .input-group__field,
 .input-group__button {
+  height: 2.4375rem;
+  line-height: 1rem;
   margin: 0;
   padding: .625rem;
   white-space: nowrap;
@@ -16,7 +18,6 @@
   background: #F3F3F3;
   border: 1px solid #CACACA;
   color: #0A0A0A;
-  line-height: normal;
 }
 
   .input-group__label:first-child {
@@ -30,7 +31,6 @@
 .input-group__field {
   border-radius: 0;
   flex: 1;
-  height: auto;
   padding-right: .625rem;
   padding-left: .625rem;
 }
@@ -48,13 +48,14 @@
 }
 
 .input-group__button {
-  height: 100%;
   padding: 0;
-  text-align: center;
 }
 
   .input-group__button a,
   .input-group__button input,
   .input-group__button button {
+    height: 2.4375rem;
+    line-height: 1.25rem;
     margin: 0;
+    padding: .5rem .625rem;
   }

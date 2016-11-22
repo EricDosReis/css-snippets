@@ -14,15 +14,16 @@
     <link rel="stylesheet" href="/css/base.css">
     <link rel="stylesheet" href="/css/code.css">
 
-    <link rel="stylesheet" href="/css/grid.css">
-    <link rel="stylesheet" href="/css/block-grid.css">
+    <link rel="stylesheet" href="/css/grids/grid.css">
+    <link rel="stylesheet" href="/css/grids/block-grid.css">
     <link rel="stylesheet" href="/css/typography.css">
 
-    <link rel="stylesheet" href="/css/inputs.css">
-    <link rel="stylesheet" href="/css/buttons.css">
-    <link rel="stylesheet" href="/css/input-group.css">
-    <link rel="stylesheet" href="/css/radio.css">
-    <link rel="stylesheet" href="/css/checkbox.css">
+    <link rel="stylesheet" href="/css/forms/inputs.css">
+    <link rel="stylesheet" href="/css/forms/buttons.css">
+    <link rel="stylesheet" href="/css/forms/buttons-modifiers.css">
+    <link rel="stylesheet" href="/css/forms/input-group.css">
+    <link rel="stylesheet" href="/css/forms/radio.css">
+    <link rel="stylesheet" href="/css/forms/checkbox.css">
 
     <link rel="stylesheet" href="/css/tables/table.css">
     <link rel="stylesheet" href="/css/tables/table-striped.css">
@@ -33,6 +34,7 @@
     <link rel="stylesheet" href="/css/colors/blue.css">
     <link rel="stylesheet" href="/css/colors/grey.css">
 
+    <link rel="stylesheet" href="/css/fixed-bar.css">
     <link rel="stylesheet" href="/css/menu.css">
 
     <link rel="stylesheet" href="/css/modifiers/alignments.css">
@@ -49,8 +51,9 @@
         Menu
       </button>
 
-      <nav class="menu menu--left bg--blue-grey-dark">
-        <ul>
+      <nav class="fixed-bar fixed-bar--left padding-2x bg--blue-grey-dark">
+        <ul class="menu">
+
           <li class="menu__item text--spaced text--uppercase">
             <a class="menu__link text--blue-grey-light" href="#base">Base</a>
           </li>
@@ -70,13 +73,13 @@
           <li class="menu__item text--spaced text--uppercase">
             <a class="menu__link text--blue-grey-light" href="#modifiers">Modifiers</a>
           </li>
-        </ul>
 
+        </ul>
       </nav>
     </header>
 
-    <main>
-      <section class="wrapper--menu-push-left">
+    <main class="padding-horizontal">
+      <section class="fixed-bar--push-left">
 
         <h1 class="text--center">CSS Snippets</h1>
 
@@ -125,6 +128,10 @@
             <h4>
               Nesting
             </h4>
+
+            <p>
+              You can nest the grids indefinitely.
+            </p>
 
             <div class="row radius bg--grey-light">
               <p class="text--center">row</p>
@@ -397,7 +404,7 @@
             <button class="button" disabled>Disabled Button</button>
             <button class="button button--outlined">Outlined Button</button>
             <button class="button button--dashed">Dashed Button</button>
-            <button class="button button--clear">Clear Button</button>
+            <button class="button button--clean">Clean Button</button>
 
             <h4>Buttons Small</h4>
 
@@ -405,7 +412,7 @@
             <button class="button button--small" disabled>Disabled Button</button>
             <button class="button button--small button--outlined">Outlined Button</button>
             <button class="button button--small button--dashed">Dashed Button</button>
-            <button class="button button--small button--clear">Clear Button</button>
+            <button class="button button--small button--clean">Clean Button</button>
 
             <h4>Buttons Large</h4>
 
@@ -413,7 +420,7 @@
             <button class="button button--large" disabled>Disabled Button</button>
             <button class="button button--large button--outlined">Outlined Button</button>
             <button class="button button--large button--dashed">Dashed Button</button>
-            <button class="button button--large button--clear">Clear Button</button>
+            <button class="button button--large button--clean">Clean Button</button>
 
             <h4>Buttons Expanded</h4>
 
@@ -421,7 +428,7 @@
             <button class="button button--expanded" disabled>Disabled Button</button>
             <button class="button button--expanded button--outlined">Outlined Button</button>
             <button class="button button--expanded button--dashed">Dashed Button</button>
-            <button class="button button--expanded button--clear">Clear Button</button>
+            <button class="button button--expanded button--clean">Clean Button</button>
           </section>
         </article>
 
@@ -729,49 +736,79 @@
           <section>
             <h4>Typography</h4>
 
-            <p>
-              <span class="text--bold">I'm bold</span> <code>.text--bold</code>
-            </p>
+            <div class="row">
+              <div class="col sm-100 md-50">
+                <p>
+                  <span class="text--bold">I'm bold</span> <code>.text--bold</code>
+                </p>
+              </div>
 
-            <p>
-              <span class="text--italic">I'm italic</span> <code>.text--italic</code>
-            </p>
+              <div class="col sm-100 md-50">
+                <p>
+                  <span class="text--italic">I'm italic</span> <code>.text--italic</code>
+                </p>
+              </div>
+            </div>
 
-            <p>
-              <span class="text--small">I'm small</span> <code>.text--small</code>
-            </p>
+            <div class="row">
+              <div class="col sm-100 md-50">
+                <p>
+                  <span class="text--small">I'm small</span> <code>.text--small</code>
+                </p>
+              </div>
 
-            <p>
-              <span class="text--big">I'm big</span> <code>.text--big</code>
-            </p>
+              <div class="col sm-100 md-50">
+                <p>
+                  <span class="text--big">I'm big</span> <code>.text--big</code>
+                </p>
+              </div>
+            </div>
 
-            <p>
-              <span class="text--uppercase">I'm uppercase</span> <code>.text--uppercase</code>
-            </p>
+            <div class="row">
+              <div class="col sm-100 md-50">
+                <p>
+                  <span class="text--uppercase">I'm uppercase</span> <code>.text--uppercase</code>
+                </p>
+              </div>
 
-            <p>
-              <span class="text--lowercase">I'm lowercase</span> <code>.text--lowercase</code>
-            </p>
+              <div class="col sm-100 md-50">
+                <p>
+                  <span class="text--lowercase">I'm lowercase</span> <code>.text--lowercase</code>
+                </p>
+              </div>
+            </div>
 
-            <p>
-              <span class="text--capitalize">I'm capitalize</span> <code>.text--capitalize</code>
-            </p>
+            <div class="row">
+              <div class="col sm-100 md-50">
+                <p>
+                  <span class="text--capitalize">I'm capitalize</span> <code>.text--capitalize</code>
+                </p>
+              </div>
 
-            <p>
-              <span class="text--spaced">I'm spaced</span> <code>.text--spaced</code>
-            </p>
+              <div class="col sm-100 md-50">
+                <p>
+                  <span class="text--spaced">I'm spaced</span> <code>.text--spaced</code>
+                </p>
+              </div>
+            </div>
 
-            <p class="text--left">
-              Text align left <code>.text--left</code>.
-            </p>
+            <div class="row">
+              <div class="col sm-100">
 
-            <p class="text--center">
-              Text align center <code>.text--center</code>.
-            </p>
+                <p class="text--left">
+                  Text align left <code>.text--left</code>.
+                </p>
 
-            <p class="text--right">
-              Text align right <code>.text--right</code>.
-            </p>
+                <p class="text--center">
+                  Text align center <code>.text--center</code>.
+                </p>
+
+                <p class="text--right">
+                  Text align right <code>.text--right</code>.
+                </p>
+
+              </div>
+            </div>
 
             <p class="text--justify">
               <span class="text--bold">I'm a justified text</span> and lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore nobis tenetur nemo saepe libero eligendi. Dicta earum quibusdam quas facere eaque quam, fugit velit? Veritatis, dolore sed saepe odit doloremque optio ullam fugiat, excepturi quae cum, nemo iste voluptate pariatur natus architecto. Quia ullam rem quo facere ex minima animi eveniet fugiat necessitatibus porro quasi fugit aliquid ea expedita est adipisci odit ipsam, pariatur distinctio blanditiis repudiandae. Deleniti ducimus voluptatibus labore quo dolore velit accusantium vero officia, quae culpa eos magnam, porro itaque earum atque corrupti officiis quod ab! Nemo numquam praesentium non temporibus ullam sequi quas fuga vitae veritatis dolore libero atque ab, necessitatibus aspernatur id officiis eaque fugiat quisquam, blanditiis <code>.text--justify</code>.
@@ -793,6 +830,6 @@
       </section>
     </main>
 
-    <script src="/js/menu.js"></script>
+    <script src="/js/fixed-bar.js"></script>
   </body>
 </html>

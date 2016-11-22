@@ -1,10 +1,10 @@
 (function () {
   'use strict'
 
-  let menu = document.querySelector('.menu')
+  let fixedBar = document.querySelector('.fixed-bar')
   let toggleButton = document.querySelector('.menu-toggle')
 
   toggleButton.addEventListener('click', () => {
-    menu.classList.toggle('menu--show')
+    fixedBar.classList.toggle('fixed-bar--show')
   })
 })()

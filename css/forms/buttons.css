@@ -13,7 +13,7 @@
   letter-spacing: .125rem;
   line-height: 1;
   margin: 0 0 1rem 0;
-  padding: .85rem 1rem;
+  padding: .8125rem 1rem;
   text-align: center;
   transition: background-color .25s ease-out, color .25s ease-out;
   vertical-align: middle;
@@ -41,7 +41,7 @@
   width: 100%;
 }
 
-.button--clear {
+.button--clean {
   background-color: transparent;
   border-color: transparent;
   color: inherit;
