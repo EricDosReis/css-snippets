@@ -95,7 +95,7 @@
   	width: 25%;
   }
 
-  .lg-block-grid-5 > * {
+  .lg-block-grid-5 > .col {
   	width: 20%;
   }
 

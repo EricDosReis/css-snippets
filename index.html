@@ -5,44 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>CSS Snippets</title>
+    <title>Granular CSS</title>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,700">
 
     <link rel="stylesheet" href="/node_modules/normalize.css">
 
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/code.css">
+    <link rel="stylesheet" href="/src/css/base.css">
+    <link rel="stylesheet" href="/src/css/code.css">
 
-    <link rel="stylesheet" href="/css/grids/grid.css">
-    <link rel="stylesheet" href="/css/grids/block-grid.css">
-    <link rel="stylesheet" href="/css/typography.css">
+    <link rel="stylesheet" href="/src/css/grids/grid.css">
+    <link rel="stylesheet" href="/src/css/grids/block-grid.css">
+    <link rel="stylesheet" href="/src/css/typography.css">
 
-    <link rel="stylesheet" href="/css/forms/inputs.css">
-    <link rel="stylesheet" href="/css/forms/buttons.css">
-    <link rel="stylesheet" href="/css/forms/buttons-modifiers.css">
-    <link rel="stylesheet" href="/css/forms/input-group.css">
-    <link rel="stylesheet" href="/css/forms/radio.css">
-    <link rel="stylesheet" href="/css/forms/checkbox.css">
+    <link rel="stylesheet" href="/src/css/forms/inputs.css">
+    <link rel="stylesheet" href="/src/css/forms/buttons.css">
+    <link rel="stylesheet" href="/src/css/forms/buttons-modifiers.css">
+    <link rel="stylesheet" href="/src/css/forms/input-group.css">
+    <link rel="stylesheet" href="/src/css/forms/radio.css">
+    <link rel="stylesheet" href="/src/css/forms/checkbox.css">
 
-    <link rel="stylesheet" href="/css/tables/table.css">
-    <link rel="stylesheet" href="/css/tables/table-striped.css">
-    <link rel="stylesheet" href="/css/tables/table-stacked.css">
-    <link rel="stylesheet" href="/css/tables/table-scroll.css">
+    <link rel="stylesheet" href="/src/css/tables/table.css">
+    <link rel="stylesheet" href="/src/css/tables/table-striped.css">
+    <link rel="stylesheet" href="/src/css/tables/table-stacked.css">
+    <link rel="stylesheet" href="/src/css/tables/table-scroll.css">
 
-    <link rel="stylesheet" href="/css/colors/blue-grey.css">
-    <link rel="stylesheet" href="/css/colors/blue.css">
-    <link rel="stylesheet" href="/css/colors/grey.css">
+    <link rel="stylesheet" href="/src/css/colors/blue-grey.css">
+    <link rel="stylesheet" href="/src/css/colors/blue.css">
+    <link rel="stylesheet" href="/src/css/colors/grey.css">
 
-    <link rel="stylesheet" href="/css/fixed-bar.css">
-    <link rel="stylesheet" href="/css/menu.css">
+    <link rel="stylesheet" href="/src/css/fixed-bar.css">
+    <link rel="stylesheet" href="/src/css/menu.css">
 
-    <link rel="stylesheet" href="/css/modifiers/alignments.css">
-    <link rel="stylesheet" href="/css/modifiers/lists.css">
-    <link rel="stylesheet" href="/css/modifiers/margins.css">
-    <link rel="stylesheet" href="/css/modifiers/misc.css">
-    <link rel="stylesheet" href="/css/modifiers/paddings.css">
-    <link rel="stylesheet" href="/css/modifiers/typography.css">
+    <link rel="stylesheet" href="/src/css/modifiers/alignments.css">
+    <link rel="stylesheet" href="/src/css/modifiers/lists.css">
+    <link rel="stylesheet" href="/src/css/modifiers/margins.css">
+    <link rel="stylesheet" href="/src/css/modifiers/misc.css">
+    <link rel="stylesheet" href="/src/css/modifiers/paddings.css">
+    <link rel="stylesheet" href="/src/css/modifiers/typography.css">
   </head>
 
   <body>
@@ -81,7 +81,7 @@
     <main class="padding-horizontal">
       <section class="fixed-bar--push-left">
 
-        <h1 class="text--center">CSS Snippets</h1>
+        <h1 class="text--center">Granular CSS</h1>
 
         <article id="base">
           <h2>Base</h2>
@@ -102,6 +102,68 @@
 
           <section>
             <h3>Normal Grid</h3>
+
+            <p>
+              Start by adding an element with a class of <code>.row</code>. This will create a horizontal block to contain vertical columns. Then add elements with a <code>.col</code> class within that row and specify widths of each column with the <code>.sm-#</code>, <code>.md-#</code> and <code>.lg-#</code> classes.
+            </p>
+
+            <div class="row">
+              <div class="col sm-100 md-33">
+
+                <p class="text--center">
+                  Available sizes for <span class="text--bold">small</span> <br>
+                  <span class="text--small">(smaller than 768px by default)</span>
+                </p>
+
+                <ul class="list--inline list--centered">
+                  <li><code>.sm-25</code></li>
+                  <li><code>.sm-33</code></li>
+                  <li><code>.sm-50</code></li>
+                  <li><code>.sm-100</code></li>
+                </ul>
+              </div>
+
+              <div class="col sm-100 md-33">
+                <p class="text--center">
+                  Available sizes for <span class="text--bold">medium</span> <br>
+                  <span class="text--small">(greater than 768px by default)</span>
+                </p>
+
+                <ul class="list--inline list--centered">
+                  <li><code>.md-20</code></li>
+                  <li><code>.md-25</code></li>
+                  <li><code>.md-30</code></li>
+                  <li><code>.md-33</code></li>
+                  <li><code>.md-40</code></li>
+                  <li><code>.md-50</code></li>
+                  <li><code>.md-60</code></li>
+                  <li><code>.md-70</code></li>
+                  <li><code>.md-80</code></li>
+                  <li><code>.md-100</code></li>
+                </ul>
+              </div>
+
+              <div class="col sm-100 md-33">
+                <p class="text--center">
+                  Available sizes for <span class="text--bold">large</span> <br>
+                  <span class="text--small">(greater than 1280px by default)</span>
+                </p>
+
+                <ul class="list--inline list--centered">
+                  <li><code>.lg-20</code></li>
+                  <li><code>.lg-25</code></li>
+                  <li><code>.lg-30</code></li>
+                  <li><code>.lg-33</code></li>
+                  <li><code>.lg-40</code></li>
+                  <li><code>.lg-50</code></li>
+                  <li><code>.lg-60</code></li>
+                  <li><code>.lg-66</code></li>
+                  <li><code>.lg-70</code></li>
+                  <li><code>.lg-80</code></li>
+                  <li><code>.lg-100</code></li>
+                </ul>
+              </div>
+            </div>
 
             <div class="row radius bg--grey-light">
               <p class="text--center">row</p>
@@ -172,6 +234,51 @@
               If you want a fixed number of items per line, then use the Block Grid approach.
             </p>
 
+            <p>
+              First add an element with a class of <code>.media-block-grid-#</code>. This will create a block to contain columns. Then add elements with a <code>.col</code> class within the element with <code>.size-block-grid-#</code> class.
+            </p>
+
+            <div class="row">
+              <div class="col sm-100 md-33">
+                <p class="text--center">
+                  Available options for <span class="text--bold">small</span> <br>
+                  <span class="text--small">(smaller than 768px by default)</span>
+                </p>
+
+                <ul class="list--inline list--centered">
+                  <li><code>.sm-block-grid-1</code></li>
+                  <li><code>.sm-block-grid-2</code></li>
+                  <li><code>.sm-block-grid-3</code></li>
+                </ul>
+              </div>
+
+              <div class="col sm-100 md-33">
+                <p class="text--center">
+                  Available options for <span class="text--bold">medium</span> <br>
+                  <span class="text--small">(greater than 768px by default)</span>
+                </p>
+
+                <ul class="list--inline list--centered">
+                  <li><code>.md-block-grid-2</code></li>
+                  <li><code>.md-block-grid-3</code></li>
+                </ul>
+              </div>
+
+              <div class="col sm-100 md-33">
+                <p class="text--center">
+                  Available options for <span class="text--bold">large</span> <br>
+                  <span class="text--small">(greater than 1280px by default)</span>
+                </p>
+
+                <ul class="list--inline list--centered">
+                  <li><code>.lg-block-grid-2</code></li>
+                  <li><code>.lg-block-grid-3</code></li>
+                  <li><code>.lg-block-grid-4</code></li>
+                  <li><code>.lg-block-grid-5</code></li>
+                </ul>
+              </div>
+            </div>
+
             <div class="sm-block-grid-1 md-block-grid-2 lg-block-grid-4">
               <figure class="col">
                 <img class="center" src="http://placehold.it/250x250" alt="Image description 1">
@@ -217,7 +324,11 @@
           <h2>Forms</h2>
 
           <section>
-            <h3>Text Fields</h3>
+            <h3>Fields</h3>
+
+            <p>
+              Styles for inputs type <code>text</code>, <code>date</code>, <code>datetime</code>, <code>datetime-local</code>, <code>email</code>, <code>month</code>, <code>number</code>, <code>password</code>, <code>search</code>, <code>tel</code>, <code>time</code>, <code>url</code>, <code>week</code>, <code>select</code> and <code>textarea</code>. You can also put a hint or help below the input by adding class of <code>.input-help</code> in a <code>&lt;p&gt;</code> element for example.
+            </p>
 
             <div class="row">
               <div class="col sm-100 md-50">
@@ -227,7 +338,7 @@
               </div>
 
               <div class="col sm-100 md-50">
-                <label class="text--bold" for="email">E-mail</label>
+                <label class="text--bold" for="email">Email</label>
 
                 <input type="email" id="email" placeholder="e.g. eric@email.com">
               </div>
@@ -273,7 +384,7 @@
                 <textarea id="description" cols="30" rows="8"></textarea>
 
                 <p class="input-help">
-                  Your description must have at least 100 characters.
+                  A hint or help text here.
                 </p>
               </div>
 
@@ -282,6 +393,16 @@
 
           <section>
             <h3>Input Group</h3>
+
+            <p>
+              To attach extra text or controls to the left or right of an input field, wrap the elements in an <code>.input-group</code> container, then add these classes to the elements inside:
+            </p>
+
+            <ul>
+              <li><code>.input-group__field</code> on the text field.</li>
+              <li><code>.input-group__label</code> on a text label.</li>
+              <li><code>.input-group__button</code> on a button. <b>Place the button inside this wrapper</b>.</li>
+            </ul>
 
             <div class="input-group">
               <label class="input-group__label" for="protocol">http://</label>
@@ -297,12 +418,12 @@
             </div>
 
             <div class="input-group">
-              <label class="input-group__label" for="post-code">E-mail</label>
+              <label class="input-group__label" for="post-code">Email</label>
 
               <input class="input-group__field" id="post-code" type="text">
 
               <div class="input-group__button">
-                <button class="button">Send</button>
+                <button class="button">Subscribe</button>
               </div>
             </div>
           </section>
