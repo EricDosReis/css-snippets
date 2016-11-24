@@ -1,0 +1,10 @@
+.list--centered {
+	padding: 0;
+	text-align: center;
+}
+
+	.list--centered li {
+		display: inline-block;
+		float: none;
+    margin-right: .5em;
+	}

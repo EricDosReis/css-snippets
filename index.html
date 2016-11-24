@@ -15,10 +15,20 @@
     <link rel="stylesheet" href="/src/css/code.css">
 
     <link rel="stylesheet" href="/src/css/grids/grid.css">
+    <link rel="stylesheet" href="/src/css/grids/grid-sm.css">
+    <link rel="stylesheet" href="/src/css/grids/grid-md.css">
+    <link rel="stylesheet" href="/src/css/grids/grid-lg.css">
+
+
     <link rel="stylesheet" href="/src/css/grids/block-grid.css">
+    <link rel="stylesheet" href="/src/css/grids/block-grid-sm.css">
+    <link rel="stylesheet" href="/src/css/grids/block-grid-md.css">
+    <link rel="stylesheet" href="/src/css/grids/block-grid-lg.css">
+
     <link rel="stylesheet" href="/src/css/typography.css">
 
     <link rel="stylesheet" href="/src/css/forms/inputs.css">
+    <link rel="stylesheet" href="/src/css/forms/select.css">
     <link rel="stylesheet" href="/src/css/forms/buttons.css">
     <link rel="stylesheet" href="/src/css/forms/buttons-modifiers.css">
     <link rel="stylesheet" href="/src/css/forms/input-group.css">
@@ -38,7 +48,11 @@
     <link rel="stylesheet" href="/src/css/menu.css">
 
     <link rel="stylesheet" href="/src/css/modifiers/alignments.css">
-    <link rel="stylesheet" href="/src/css/modifiers/lists.css">
+
+    <link rel="stylesheet" href="/src/css/modifiers/list-inline.css">
+    <link rel="stylesheet" href="/src/css/modifiers/list-centered.css">
+    <link rel="stylesheet" href="/src/css/modifiers/list-no-bullets.css">
+
     <link rel="stylesheet" href="/src/css/modifiers/margins.css">
     <link rel="stylesheet" href="/src/css/modifiers/misc.css">
     <link rel="stylesheet" href="/src/css/modifiers/paddings.css">
@@ -220,7 +234,7 @@
               </div>
 
               <div class="col sm-50 radius">
-                <p class="text--center radius text--grey-light bg--grey">
+                <p class="text--center radius no-margin-vertical text--grey-light bg--grey">
                   sm-50
                 </p>
               </div>
@@ -826,25 +840,42 @@
           <section>
             <h3>Lists</h3>
 
-            <h4>Inline list</h4>
+            <div class="row">
+              <div class="col sm-100 md-33">
+                <h4>Normal</h4>
 
-            <ul class="list--inline">
-              <li>Rice</li>
-              <li>Bean</li>
-              <li>Carrot</li>
-              <li>Meat</li>
-            </ul>
+                <ul>
+                  <li>Homer</li>
+                  <li>Bart</li>
+                  <li>Lisa</li>
+                  <li>Marge</li>
+                </ul>
+              </div>
 
-            <h4>No bullets</h4>
+              <div class="col sm-100 md-33">
+                <h4>No bullets</h4>
 
-            <ul class="list--no-bullets">
-              <li>360 Flip</li>
-              <li>Double Flip</li>
-              <li>FS Nose Slide</li>
-              <li>Dark Slide</li>
-            </ul>
+                <ul class="list--no-bullets">
+                  <li>360 Flip</li>
+                  <li>Double Flip</li>
+                  <li>FS Nose Slide</li>
+                  <li>Dark Slide</li>
+                </ul>
+              </div>
 
-            <h4>Centered list</h4>
+              <div class="col sm-100 md-33">
+                <h4>Inline list</h4>
+
+                <ul class="list--inline">
+                  <li>Rice</li>
+                  <li>Bean</li>
+                  <li>Carrot</li>
+                  <li>Meat</li>
+                </ul>
+              </div>
+            </div>
+
+            <h4 class="text--center">Centered list</h4>
 
             <ul class="list--centered">
               <li>Home</li>
@@ -951,6 +982,6 @@
       </section>
     </main>
 
-    <script src="/js/fixed-bar.js"></script>
+    <script src="/src/js/fixed-bar.js"></script>
   </body>
 </html>

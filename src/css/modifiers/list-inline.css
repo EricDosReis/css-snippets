@@ -1,0 +1,6 @@
+.list--inline li {
+	display: inline-block;
+	margin-top: .125em;
+	margin-right: .5em;
+	margin-bottom: .625em;
+}
