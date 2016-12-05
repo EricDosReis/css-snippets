@@ -24,12 +24,6 @@
 		width: auto;
 	}
 
-		.row .row.col {
-			padding-left: 0;
-			padding-right: 0;
-			width: 100%;
-		}
-
 .col {
 	float: left;
 	padding-left: 1rem;
