@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EricDosReis/css-snippets.git"
+    "url": "git+https://github.com/EricDosReis/granular-css.git"
   },
   "keywords": [
     "css",
@@ -19,9 +19,9 @@
   "author": "Eric dos Reis",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/EricDosReis/css-snippets/issues"
+    "url": "https://github.com/EricDosReis/granular-css/issues"
   },
-  "homepage": "https://github.com/EricDosReis/css-snippets#readme",
+  "homepage": "https://github.com/EricDosReis/granular-css#readme",
   "dependencies": {
     "normalize.css": "^5.0.0"
   },
