@@ -15,7 +15,7 @@
   margin: 0 0 1rem 0;
   padding: .8125rem 1rem;
   text-align: center;
-  transition: background-color .25s ease-out, color .25s ease-out;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
   vertical-align: middle;
 }
 
