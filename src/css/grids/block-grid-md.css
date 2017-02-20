@@ -3,7 +3,7 @@
 /* --------------------------------- */
 @media screen and (min-width: 768px) {
 
-  [class*=block-grid-] > .col:nth-of-type(n) {
+  [class*=md-block-grid-] > .col:nth-of-type(n) {
     clear: none;
   }
 
