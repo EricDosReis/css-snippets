@@ -32,37 +32,23 @@ textarea {
   margin: 0 0 1rem;
   padding: .5rem;
   transition: border-color 250ms ease-in-out;
-}
-
-  [type='text']:focus,
-  [type='password']:focus,
-  [type='date']:focus,
-  [type='datetime']:focus,
-  [type='datetime-local']:focus,
-  [type='month']:focus,
-  [type='week']:focus,
-  [type='email']:focus,
-  [type='number']:focus,
-  [type='search']:focus,
-  [type='tel']:focus,
-  [type='time']:focus,
-  [type='url']:focus,
-  [type='color']:focus,
-  textarea:focus {
+  
+  &:focus {
     border: 1px solid #9B4DCA;
     transition: border-color 250ms ease-in-out;
   }
+}
 
 textarea {
   border-radius: 3px;
   height: auto;
   min-height: 3.125rem;
   max-width: 100%;
-}
-
-  textarea[rows] {
+  
+  &[rows] {
     height: auto;
   }
+}
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
