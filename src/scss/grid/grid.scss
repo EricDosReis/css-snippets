@@ -2,42 +2,43 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: 100%;
-}
-
-	.row:before,
-	.row:after,
-	.row .row:before,
-	.row .row:after  {
+	
+	&:before,
+	&:after,
+	& .row:before,
+	& .row:after  {
 		content: " ";
 		display: table;
 	}
 
-	.row:after,
-	.row .row:after {
+	&:after,
+	& .row:after {
 		clear: both;
 	}
 
-	.row .row {
+	& .row {
 		max-width: none;
 		margin-left: -1rem;
 		margin-right: -1rem;
 		width: auto;
 	}
+}
 
 .col {
 	float: left;
 	padding-left: 1rem;
 	padding-right: 1rem;
 	width: 100%;
-}
-
-	.col.right {
+	
+	
+	&.right {
 		float: right;
 	}
 
-	.col.center {
+	&.center {
 		float: none;
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
 	}
+}
