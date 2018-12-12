@@ -29,12 +29,12 @@ body {
 
 a {
 	color: inherit;
-}
-
-	a:focus,
-	a:hover {
+	
+	&:focus,
+	&:hover {
 		cursor: pointer;
 	}
+}
 
 img {
 	display: inline-block;
